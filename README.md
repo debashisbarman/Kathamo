@@ -42,7 +42,7 @@ Start with the below to begin working with a minimal Kathamo document.
 	<title></title>
 
 	<!-- Kathamo -->
-	<link href="kathamo/kathamo.css" rel="stylesheet">
+	<link href="path-to-kathamo-root-directory/kathamo.css" rel="stylesheet">
 </head>
 
 <body></body>
@@ -344,3 +344,150 @@ Use `.btn` to any standard HTML button with `btn-default`, `btn-success`, `btn-d
 ##Alerts & Panel
 
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages and panel.
+
+```
+<!-- Info alert -->
+<div class="alert alert-info">
+<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<!-- Success alert -->
+<div class="alert alert-success">
+<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+
+<!-- Danger alert -->
+<div class="alert alert-danger">
+<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<!-- Panel -->
+<div class="panel">
+<div class="panel-head">
+Panel Heading
+</div>
+<div class="panel-body">
+This is a panel.
+</div>
+</div>
+```
+
+##Navbar
+
+Kathamo provides a custom class `.navbar` to add styling `<nav>` navigation bar. Use supportive class `.navbar-static` for a static navbar.
+
+```
+<!-- Navbar -->
+<nav class="navbar clearfix" id="navbar-toggle">
+<div class="navbar-container">
+
+	<ul class="navbar-list clearfix">
+	<li class="navbar-item navbar-header"><a href="">Kathamo</a></li>
+	
+	<div class="sr-only">
+	<li class="open-menu"><a href="#navbar-toggle"><span class="fa fa-fw fa-bars"></span></a></li>
+	<li class="close-menu"><a href="#"><span class="fa fa-fw fa-close"></span></a></li>
+	</div>
+	
+	<div class="navbar-toggle pull-right">
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+
+	</div>
+
+	</ul>
+
+</div>
+</nav>
+
+<!-- Static Navbar -->
+<nav class="navbar navbar-static clearfix" id="navbar-toggle">
+<div class="navbar-container">
+
+	<ul class="navbar-list clearfix">
+	<li class="navbar-item navbar-header"><a href="">Kathamo</a></li>
+	
+	<div class="sr-only">
+	<li class="open-menu"><a href="#navbar-toggle"><span class="fa fa-fw fa-bars"></span></a></li>
+	<li class="close-menu"><a href="#"><span class="fa fa-fw fa-close"></span></a></li>
+	</div>
+	
+	<div class="navbar-toggle pull-right">
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+	
+	<li class="navbar-item"><a href="#">Link</a></li>
+
+	</div>
+
+	</ul>
+
+</div>
+</nav>
+
+```
+
+##Utilities
+
+Kathamo has a number of small utility classes that act as easy-to-use helpers.
+
+###Visibility
+
+Use visibility classes `visible-*` and `hidden-*` to control visibilty of an element. Here `*` indicates `lg`, `md` or `sm`. 
+
+```
+<!-- To disable in small devices -->
+<span class="hidden-sm">
+...
+</span>
+
+<!-- To display in small devices -->
+<span class="visible-sm">
+...
+</span>
+```
+
+###Text Alignment
+
+Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set alignment of a particular block of texts.
+
+```
+<!-- To set justified text alignment -->
+<p class="text-justify">
+...
+</p>
+```
+
+###Floating Elements
+
+Use classes `pull-right` and `pull-left` to float an element.
+
+```
+<!-- Float in right direction -->
+<div class="pull-right">
+...
+</div>
+
+<!-- Float in left direction -->
+<div class="pull-right">
+...
+</div>
+```
+
+#Examples
+
+Here are some website that uses Kathamo as basic framework for development : [Knowledge Exchange Network](http://www.kenmanipur.org), [One Man Design](http://onemandesign.github.io), [Dr. Surajit Barman's Homepage](http://www.surajitbarman.in) and [Debashis Barman's Homepage](http://www.debashisbarman.in)
+
+#Feedback
+
+Please provide [feedback](mailto:kathamo.framework@gmail.com) for better development of Kathamo.
