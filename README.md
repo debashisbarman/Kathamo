@@ -93,6 +93,71 @@ The base typeface of Kathamo is [Raleway](http://www.google.com/fonts/specimen/R
 <u>Underlined</u>
 ```
 
+##List
+
+Basic `<ol>` and `<ul>` are unstyled. Use `li-unstyled`, `li-inline`, `li-circle`, `li-square`, `li-disc`, `<dl>` to add styling.
+
+```
+<!-- Ordered List -->
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ol>
+
+<!-- Unstyled List -->
+<ol class="li-unstyled">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ol>
+
+<!-- Inline List -->
+<ol class="li-inline">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ol>
+
+<!-- Unorderd List -->
+<ul class="li-circle">
+<li>Item 1</li>
+<li> Item 3
+<ul class="li-square">
+<li>Item 1</li>
+<li>Item 2
+<ul class="li-disc">
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Item 3</li>
+</ul>
+
+<!-- Data List -->
+<dl>
+<dt>Title 1</dt>
+<dd>Item 1</dd>
+<dt>Title 2</dt>
+<dd>Item 2</dd>
+</dl>
+
+<!-- Inline Data List -->
+<dl class="li-inline">
+<dt>Inline Data List</dt>
+<dd>Item 1</dd>
+<dd>Item 2</dd>
+<dd>Item 3</dd>
+<dd>Item 4</dd>
+</dl>
+```
+
+
 ##Blockquote
 
 Use `<blockquote>` for quoting blocks of content from another source within your document.
@@ -117,6 +182,10 @@ Use `<code>` for wrapping inline snippets of code and `<pre>` for multiple lines
 &lt;link href="kathamo/kathamo.css" rel="stylesheet" /&gt;
 </pre>
 ```
+
+##Image
+
+All `<img>` in Kathamo are responsive. Kathamo provides two standard classes `img-circle` and `img-border`. Also use `left-text-wrap` or `right-text-wrap` to the `<img>` for wrapping text around a image.
 
 ##Table
 
@@ -226,3 +295,7 @@ Use `.btn` to any standard HTML button with `btn-default`, `btn-success`, `btn-d
 <a type="button" class="btn btn-success" href="">Success</a>
 <a type="button" class="btn btn-danger" href="">Danger</a>
 ```
+
+##Alerts & Panel
+
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages and panel.
