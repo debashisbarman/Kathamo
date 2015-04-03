@@ -439,7 +439,7 @@ Kathamo provides a custom class `.navbar` to add styling `<nav>` navigation bar.
 
 ##Utilities
 
-Kathamo has a number of small utility classes that act as easy-to-use helpers.
+Kathamo has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.
 
 ###Visibility
 
@@ -470,7 +470,7 @@ Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set a
 
 ###Floating Elements
 
-Use classes `pull-right` and `pull-left` to float an element. Sometimes it's better to use a utility class than create a whole new class just to float an element.
+Use classes `pull-right` and `pull-left` to float an element.
 
 ```
 <!-- Float in right direction -->
