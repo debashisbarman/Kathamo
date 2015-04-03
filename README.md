@@ -183,9 +183,54 @@ Use `<code>` for wrapping inline snippets of code and `<pre>` for multiple lines
 </pre>
 ```
 
-##Image
+##Images & Thumbnail
 
 All `<img>` in Kathamo are responsive. Kathamo provides two standard classes `img-circle` and `img-border`. Also use `left-text-wrap` or `right-text-wrap` to the `<img>` for wrapping text around a image.
+
+```
+<!-- Responsive image -->
+<img src="#" title="">
+
+<!-- Bordered image -->
+<img src="#" class="img-border">
+
+<!-- Round image -->
+<img src="#" class="img-circle">
+
+<!-- To wrap an image around text -->
+<p>
+ ...
+</p>
+<img src="#" class="left-text-wrap">
+<p>
+...
+</p>
+<img src="#" class="right-text-wrap">
+```
+
+Wrap `<ul>` or `<ol>` of `<img>` inside `.thumbnail` to create image thumbnail. Use `.col-3` or `.col-4` to specificy number of columns in the thumbnail
+
+```
+<!-- 3 columns thumbnail -->
+<div class="thumbnail">
+<ul class="col-3">
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+</div>
+
+<!-- 3 columns thumbnail -->
+<div class="thumbnail">
+<ul class="col-4">
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+<li><img src="#" title=""></li>
+</div>
+```
 
 ##Table
 
