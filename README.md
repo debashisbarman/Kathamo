@@ -470,7 +470,7 @@ Use classes `text-right`, `text-left`, `text-center` and `text-justify` to set a
 
 ###Floating Elements
 
-Use classes `pull-right` and `pull-left` to float an element.
+Use classes `pull-right` and `pull-left` to float an element. Sometimes it's better to use a utility class than create a whole new class just to float an element.
 
 ```
 <!-- Float in right direction -->
