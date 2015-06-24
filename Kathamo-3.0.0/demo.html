@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kathamo 3.0.0</title>
+<link href="kathamo.min.css" rel="stylesheet">
+
+
+<style type="text/css">
+
+.grid { background-color: #ecf0f1; }
+.size { text-align: center; font: 400 0.816rem Menlo, Monaco, "Courier New", monospace; line-height: 2.144607843; }
+
+</style>
+</head>
+<body>
+
+<section>
+<div class="container">
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Basic Template</h1>
+<p>Start with the below to begin working with a minimal Kathamo document.</p>
+<pre class="pre-scrollable">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;title&gt;&lt;/title&gt;
+
+&lt;!-- Kathamo --&gt;
+&lt;link href="kathamo/kathamo.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Grid System</h1>
+<p>Kathamo includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="grid"><div class="size">1</div></div>
+</div>
+<div class="col-lg-11 col-md-11 col-sm-11">
+<div class="grid"><div class="size">11</div></div>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="grid"><div class="size">2</div></div>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-10">
+<div class="grid"><div class="size">10</div></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="grid"><div class="size">3</div></div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9">
+<div class="grid"><div class="size">9</div></div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4">
+<div class="grid"><div class="size">4</div></div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8">
+<div class="grid"><div class="size">8</div></div>
+</div>
+
+<div class="col-lg-5 col-md-5 col-sm-5">
+<div class="grid"><div class="size">5</div></div>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7">
+<div class="grid"><div class="size">7</div></div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="grid"><div class="size">6</div></div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="grid"><div class="size">6</div></div>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<div class="grid"><div class="size">7</div></div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5">
+<div class="grid"><div class="size">5</div></div>
+</div>
+
+<div class="col-lg-8 col-md-8 col-sm-8">
+<div class="grid"><div class="size">8</div></div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4">
+<div class="grid"><div class="size">4</div></div>
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9">
+<div class="grid"><div class="size">9</div></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<div class="grid"><div class="size">3</div></div>
+</div>
+
+<div class="col-lg-10 col-md-10 col-sm-10">
+<div class="grid"><div class="size">10</div></div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="grid"><div class="size">2</div></div>
+</div>
+
+<div class="col-lg-11 col-md-11 col-sm-11">
+<div class="grid"><div class="size">11</div></div>
+</div>
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="grid"><div class="size">1</div></div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. In Kathamo, all the columns should be wrapped inside a <code>.container</code>. Otherwise the columns will occupy full viewport width. The Kathamo <code>.container</code> is self clearing. The column classes follows the syntax <code>col-*-**</code> where the <kbd>*</kbd> indicates <kbd>lg</kbd>, <kbd>md</kbd> and <kbd>sm</kbd> and <kbd>**</kbd> indicates the size of the column, ranging from 1 to 11. Here's how the Kathamo grid system works:</p>
+
+<pre class="pre-scrollable">
+&lt;!-- `.container` is the main wrapper for the grid. --&gt;
+&lt;div class="container"&gt;
+
+&lt;!-- Grid columns are created by specifying the number of 12 available columns you wish to span. --&gt;
+&lt;div class="col-lg-3 col-md-5 col-sm-12"&gt;&lt;/div&gt;
+&lt;div class="col-lg-9 col-md-7 col-sm-12"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Typography</h1>
+<p>The base typeface of Kathamo is <q>Helvetica Neue, Helvetica, sans-serif</q>, set at default font size i.e. <code>font-size: 100%</code> over <code>line-height: 1.75</code> with a <code>font-weight: 400</code>. The default font color is <code>color: #333</code>. The <code>&lt;small&gt;</code> has <code>font-size: .618em</code> and <code>color: #95a5a6</code>.</p>
+</div>
+
+<div class="clearfix">
+<div class="col-lg-5 col-md-5 col-sm-12">
+<h1>Heading 1 <small>Small Text</small></h1>
+<h2>Heading 2 <small>Small Text</small></h2>
+<h3>Heading 3 <small>Small Text</small></h3>
+<h4>Heading 4 <small>Small Text</small></h4>
+<h5>Heading 5 <small>Small Text</small></h5>
+<h6>Heading 6 <small>Small Text</small></h6>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-12">
+<h1>Paragraph</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec mollis enim, ac convallis mauris. Vestibulum tincidunt dolor quis neque rutrum, quis tincidunt mauris vehicula. Suspendisse vel dolor orci. Mauris dictum, dui a aliquam sollicitudin, ligula eros gravida magna, sit amet faucibus risus dolor non dui. Sed aliquam efficitur viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vitae augue vitae odio suscipit pretium non in est. Ut metus nibh, dictum eget purus id, eleifend porta leo.</p>
+</div>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-12">
+<h1>Another Paragraph</h1>
+<p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Fusce nec mollis enim, ac convallis mauris. Vestibulum tincidunt dolor quis neque rutrum, quis tincidunt mauris vehicula. <small>Suspendisse vel dolor orci. Mauris dictum,</small> dui a aliquam sollicitudin, <u>ligula eros gravida magna</u>, sit amet faucibus risus dolor non dui. Class aptent taciti <em>sociosqu ad litora torquent</em> per conubia nostra, per inceptos himenaeos. <a href="">Vestibulum vitae augue</a> vitae odio suscipit pretium non in est.</p>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-12">
+<h1>Blockquote</h1>
+<blockquote>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt dolor, quis tincidunt mauris vehicula. Suspendisse vel dolor orci.
+<cite>Debashis Barman</cite>
+</blockquote>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<pre class="pre-scrollable">
+&lt;!-- Standard Headings --&gt;
+&lt;h1&gt;Kathamo &lt;small&gt;Framework&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;Kathamo &lt;small&gt;Framwork&lt;/small&gt;&lt;/h6&gt;
+
+&lt;!-- Body Text --&gt;
+&lt;p&gt;Kathamo &lt;small&gt;Framework&lt;/small&gt;&lt;/p&gt;
+
+&lt;!-- Other styled text tags --&gt;
+&lt;strong&gt;Bolded&lt;/strong&gt;
+&lt;em&gt;Italicized&lt;/em&gt;
+&lt;a&gt;Colored&lt;/a&gt;
+&lt;u&gt;Underlined&lt;/u&gt;
+
+&lt;!-- Blockquote --&gt;
+&lt;blockquote&gt;
+Kathamo is an Assamese word, literary meaning "structure" or "frame"; thus the name itself suggests a framework.
+&lt;cite&gt;Debashis Barman, Kathamo Creator&lt;/cite&gt;
+&lt;/blockquote&gt
+</pre>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Form and Buttons</h1>
+<p>Use standard HTML tags for <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code>. Kathamo provides custom style for different form elements viz. inputs, textarea, select, checkbox and radio. Always use attribute <code>data-role="button"</code> to any HTML button to add custom style to it. Similarly <code>&lt;a&gt;</code> can also be converted to a HTML button by adding attribute <code>data-role="button"</code> to it.</p>
+</div>
+<form  ...  >
+<div class="col-lg-6 col-md-6 col-sm-12">
+<label>Your email</label>
+<input class="ui-full-width" type="text" name="email" placeholder="me@example.com"/>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12">
+<label>You're from</label>
+<select class="ui-full-width">
+<option>Country</option>
+<option name="country" value="Option 1">India</option>
+<option name="country" value="Option 2">Outside India</option>
+</select>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<label>Message</label>
+<textarea class="ui-full-width" name="message" placeholder="Hi! Deb..."></textarea>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<input type="checkbox" name="copy-to-yourself">Send a copy to yourself.
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+<input data-role="button" type="submit" value="Submit">
+<input data-role="button" type="reset" value="Clear">
+</div>
+</form>
+</div>
+
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<pre class="pre-scrollable">
+&lt;!-- Label --&gt;
+&lt;label&gt; ... &lt;/label&gt;
+
+&lt;!-- Text Inputs --&gt;
+&lt;input name="..." type="..." placeholder="..."&gt;
+
+&lt;!-- Selection List --&gt;
+&lt;select&gt;
+  ...
+&lt;/select&gt;
+
+&lt;!-- Textarea --&gt;
+&lt;textarea name="..." placeholder="..."&gt;&lt;/textarea&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;input name="..." type="checkbox"&gt;
+
+&lt;!-- Radio --&gt;
+&lt;input name="..." type="radio"&gt;
+
+&lt;!-- Buttons --&gt;
+&lt;input data-role="button" type="submit" value="Submit"&gt;
+&lt;button data-role="button" type="button"&gt;Submit&lt;/button&gt;
+&lt;a data-role="button" type="button" href=""&gt;Submit&lt;/a&gt;
+</pre>
+</div>
+</div>
+
+</section>
+
+<section>
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Tables</h1>
+<p>Use <code>&lt;table&gt;</code> to add basic styling to any HTML table. Wrap the <code>&lt;table&gt;</code> inside <code>.table-responsive</code> to make it responsive. Also use the attribute <code>data-prefix</code> in <code>&lt;caption&gt;</code> to add some prefix to <code>&lt;caption&gt;</code> content. Similarly add <code>data-position="top"</code> or <code>data-position="bottom"</code> to define the position of the <code>&lt;caption&gt;</code>. By default <code>&lt;caption&gt;</code> is positioned at the top.</p>
+<div class="table-responsive">
+<table>
+<caption data-prefix="Default Table : ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</caption>
+<thead>
+<tr>
+<th>Character</th>
+<th>Actor/Actress</th>
+<th>Age</th>
+<th>Movies/TV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="table-responsive">
+<table class="table-hover">
+<caption data-prefix="Hovered Table : ">Use <kbd>.table-hover</kbd> to add hover effects to table rows.</caption>
+<thead>
+<tr>
+<th>Character</th>
+<th>Actor/Actress</th>
+<th>Age</th>
+<th>Movies/TV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="table-responsive">
+<table class="table-no-border">
+<caption data-prefix="Borderless Table : ">Use <kbd>.table-no-border</kbd> to remove borders on all sides of the table and cells.</caption>
+<thead>
+<tr>
+<th>Character</th>
+<th>Actor/Actress</th>
+<th>Age</th>
+<th>Movies/TV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="table-responsive">
+<table class="table-striped">
+<caption data-prefix="Striped Table : ">Use <kbd>.table-striped</kbd> to add zebra-striping to any table row within the <kbd>&lt;tbody&gt;</kbd>.</caption>
+<thead>
+<tr>
+<th>Character</th>
+<th>Actor/Actress</th>
+<th>Age</th>
+<th>Movies/TV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+<tr>
+<td>Batman</td>
+<td>Test</td>
+<td>Test</td>
+<td>Test</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div>
+
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<pre class="pre-scrollable">
+&lt;!-- Default Table --&gt;
+&lt;table&gt;
+&lt;caption data-prefix="Default Table : " data-position="top"&gt;...&lt;/caption&gt;
+  ...
+&lt;/table&gt;
+
+&lt;!-- Hovered Table --&gt;
+&lt;table class="table-hover"&gt;
+&lt;caption data-prefix="Hovered Table : " data-position="top"&gt;...&lt;/caption&gt;
+  ...
+&lt;/table&gt;
+
+&lt;!-- Borderless Table --&gt;
+&lt;table class="table-no-border"&gt;
+&lt;caption data-prefix="Borderless Table : " data-position="top"&gt;...&lt;/caption&gt;
+  ...
+&lt;/table&gt;
+
+&lt;!-- Striped Table --&gt;
+&lt;table class="table-striped"&gt;
+&lt;caption data-prefix="Striped Table : " data-position="top"&gt;...&lt;/caption&gt;
+  ...
+&lt;/table&gt;
+
+&lt;!-- Responsive Table --&gt;
+&lt;div class="responsive-table"&gt;
+&lt;table ... &gt;
+  ...
+&lt;/table&gt;
+&lt;/div&gt;
+</pre>
+</div>
+</div>
+
+</section>
+
+<section>
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Lists</h1>
+<p>Use standard HTML tags for <code>&lt;li&gt;</code>, <code>&lt;ul&gt;</code> and <code>&lt;dl&gt;</code>. Kathamo provides custom style for unordered list, ordered list and description list. Use <code>.li-inline</code> to create an inline list. <code>.li-inline</code> does not work with <code>&lt;dl&gt;</code>.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<strong>Unordered List</strong>
+<ul>
+<li>Lorem ipsum dolor</li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Lorem ipsum dolor sit</li>
+<li>Lorem ipsum dolor</li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Lorem ipsum dolor sit</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<strong>Ordered List</strong>
+<ol>
+<li>Lorem ipsum dolor</li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Lorem ipsum dolor sit</li>
+<li>Lorem ipsum dolor</li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Lorem ipsum dolor sit</li>
+</ol>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+<strong>Description List</strong>
+<dl>
+<dt>Lorem ipsum dolor</dt>
+<dd>Lorem ipsum dolor</dd>
+<dd>Lorem ipsum dolor sit amet</dd>
+<dd>Lorem ipsum dolor sit</dd>
+<dd>Lorem ipsum dolor</dd>
+<dd>Lorem ipsum dolor sit amet</dd>
+</dl>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<strong>Inline List</strong>
+<ul class="li-inline">
+<li>Lorem ipsum dolor</li>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Lorem ipsum dolor sit</li>
+<li>Lorem ipsum dolor</li>
+</ul>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<pre class="pre-scrollable">
+&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;!-- Ordered List --&gt;
+&lt;ol&gt;
+  ...
+&lt;/ol&gt;
+
+&lt;!-- Description List --&gt;
+&lt;dl&gt;
+  ...
+&lt;/dl&gt;
+
+&lt;!-- Inline List --&gt;
+&lt;ul class="li-inline"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p>Kathamo also provides scope to remove styles from lists. Use <code>.li-unstyled</code> to remove all styles from the list. <code>.li-unstyled</code> does not work with <code>&lt;dl&gt;</code>.</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<strong>Unstyled unordered List</strong>
+<ul class="li-unstyled">
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<strong>Unstyled ordered List</strong>
+<ol class="li-unstyled">
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+</ol>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<pre class="pre-scrollable">
+&lt;!-- Unstyled unordered List --&gt;
+&lt;ul class="li-unstyled"&gt;
+  ...
+&lt;/ul&gt;
+
+&lt;!-- Unstyled ordered List --&gt;
+&lt;ol class="li-unstyled"&gt;
+  ...
+&lt;/ol&gt;
+</pre>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Alert</h1>
+<p>Kathamo provides contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Use <code>.alert</code> any standard HTML block to make it an alert box.</p>
+<div class="alert alert-info">
+<p><strong>Alert Info :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<br>
+<div class="alert alert-success">
+<p><strong>Alert Success :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<br>
+<div class="alert alert-danger">
+<p><strong>Alert Danger :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<p>Add <code>.alert-info</code>, <code>.alert-success</code> and <code>.alert-danger</code> for different alert messages.</p>
+<pre>
+&lt;!-- Alerts --&gt;
+&lt;div class="alert alert-info"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;div class="alert alert-success"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;div class="alert alert-danger"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Panel</h1>
+<p>While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component. Use <code>.panel</code> any standard HTML block to make it a panel box. Always wrap the panel title inside <code>.panel-head</code> and panel content inside <code>panel-body</code>.</p>
+<div class="panel">
+<div class="panel-head">
+Panel Title
+</div>
+<div class="panel-body">
+<p><strong>Panel Body :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec mollis enim, ac convallis mauris. Vestibulum tincidunt dolor quis neque rutrum, quis tincidunt mauris vehicula.</p>
+</div>
+</div>
+<pre>
+&lt;!-- Panel --&gt;
+&lt;div class="panel"&gt;
+&lt;div class="panel-head"&gt;
+  ...
+&lt;/div&gt;
+&lt;div class="panel-body"&gt;
+  ...
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+</div>
+</section>
+
+<section id="navbar">
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1>Navbar</h1>
+<p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+<nav class="" id="navigation">
+<ul class="navbar-container">
+<li class="navbar-brand">Brand</li>
+<li class="open-menu"><a href="#navigation">Open</a></li>
+<li class="close-menu"><a href="#navbar">Close</a></li>
+<div class="navbar-collapse pull-right">
+<li class="navbar-item"><a href="">Link</a></li>
+<li class="navbar-item"><a href="">Another Link</a></li>
+<li class="navbar-item navbar-dropdown-container">Dropdown
+<ul class="navbar-dropdown">
+<li class="navbar-dropdown-item"><a href="">Link</a></li>
+<li class="navbar-dropdown-item"><a href="">Another Link</a></li>
+<li class="divider"></li>
+<li class="navbar-dropdown-item"><a href="">Separate Link</a></li>
+</ul>
+</li>
+<li class="navbar-form-control">
+<form>
+<input type="text" placeholder="Search" />
+<input data-role="button" type="submit" value="Submit">
+</form>
+</li>
+</div>
+</ul>
+</nav>
+<pre class="pre-scrollable">
+&lt;!-- Default Navbar --&gt;
+&lt;nav class="navbar-static" id="navigation"&gt;
+&lt;ul&gt;
+&lt;li class="navbar-brand"&gt;Brand&lt;/li&gt;
+&lt;li class="open-menu"&gt;&lt;a href="#navigation"&gt;Open&lt;/a&gt;&lt;/li&gt;
+&lt;li class="close-menu"&gt;&lt;a href="#navbar"&gt;Close&lt;/a&gt;&lt;/li&gt;
+&lt;div class="navbar-collapse pull-right"&gt;
+&lt;li class="navbar-item"&gt;&lt;a href=""&gt;Link&lt;/a&gt;&lt;/li&gt;
+  ...
+&lt;li class="navbar-item"&gt;&lt;a href=""&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li class="navbar-form-control"&gt;
+&lt;form ... &gt;
+&lt;input type="text" placeholder="Search" /&gt;
+&lt;input data-role="button" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+&lt;/li&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+</div>
+</div>
+</section>
+
+</body>
+</html>
