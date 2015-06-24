@@ -764,6 +764,17 @@ a:hover {
   color: #2980b9; 
 }
 
+hr {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid #95a5a6;
+}
+
+img {
+  max-width: 100%;
+}
+
 *[data-role="button"] { 
   display: inline; 
   width: auto;
